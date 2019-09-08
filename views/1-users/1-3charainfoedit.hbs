@@ -1,0 +1,64 @@
+{{#extend "stylesheets"}}
+<link rel="stylesheet" type="text/css" href="/stylesheets/user/kickstart.css" media="all" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/user/style.css" media="all" /> 
+{{/extend}}
+	
+	{{> 1usernavigation }}
+
+<div class="grid">
+<div class="col_12">
+	<blockquote>
+	<p>When you begin Edit a Character..</p>
+	</blockquote>
+	<p>Please Enter the following information as needed</p>
+    <hr>
+    <form action='/users/characterinfoadd' method="POST" autocomplete="off">
+    <!-- Label with Hint -->
+    <label for="text5">Page Number<span>0-9</span></label>
+    <input type="number" name= 'PageNo' placeholder="Put Character Page No." />
+    {{!-- <br><br>
+    <label for="text5">Identity Number <span>0-9</span></label>
+    <input type="number" name= 'IdNo' placeholder="Put Character ID No." />
+    <br><br>
+    <label for="text5">Character Name <span>A-Z, 0-9</span></label>
+    <input type="text" name= 'Character_Name' placeholder="Character Name" />
+    <br><br>
+    <label for="text5">Character Level <span>0-9</span></label>
+    <input type="number" name= 'Level' placeholder="Character Level" />
+    <br><br>
+    <label for="text5">Character Job Title <span>A-Z, 0-9</span></label>
+    <input type="text" name= 'Job_Title' placeholder="Character Job" />
+    <br><br>
+    <label for="text5">Character Job Class <span>A-Z, 0-9</span></label>
+    <input type="text" name= 'Class' placeholder="Character Class" />
+    <br><br>
+    <label for="text5">Character Job Category <span>A-Z, 0-9</span></label>
+    <input type="text" name= 'Category' placeholder="Character Category" />
+    <br><br>
+    <label for="text5">Character Effect Level <span>0-9</span></label>
+    <input type="number" name= 'EffectLevel' placeholder="Character Effect Level" />
+    <br><br>
+    <label for="text5">Character Current Location <span>A-Z, 0-9</span></label>
+    <input type="text" name= 'Location' placeholder="Current Location(Town)" />
+    <br><br> --}}
+    {{!-- <label for="text5">Label with Hint <span>A-Z, 0-9</span></label>
+    <input type="text" name= '' placeholder="Placeholder Text" />
+    <br><br>
+    <textarea name="textarea1" placeholder="Placeholder Text"></textarea><br> --}}
+    <br><br>
+    <input type="submit" value="Enter..">
+    <a class="btn btn-secondary" href="/users/characterinformation"><i class="fa fa-list-alt"></i> Back To Character Info List</a>
+    </form>
+	</div>
+	<hr/>
+</div>
+
+
+
+{{#extend "scripts"}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/javascripts/users/kickstart.js"></script> <!-- KICKSTART -->
+<script> document.title = 'Character Infromation Page' </script>
+{{/extend}}
+<!-- ===================================== START FOOTER ===================================== -->
+<div class="clear"></div>
