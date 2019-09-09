@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path');
-var fs = require('fs');
+Category = require('../models/Category');
 // app.use('/', indexRouter);
 
 //router address localhost:4121/
@@ -15,10 +14,7 @@ router.get('/', function(req, res, next) {
 //descriptions: Test Page
 //comments:for testing purpose
 router.get('/about', function(req, res, next) {
-  res.sendFile('testscript.html', {root: path.join(__dirname, '../files')});
+  res.render('about');
 });
-
-
-
 
 module.exports = router;
