@@ -6,7 +6,7 @@ var router = express.Router();
 //descriptions: get all users 
 //comments:
 router.get('/', function(req, res, next) {
-  res.render('users/index');
+  res.send('Character Home Route');
 });
 
 
