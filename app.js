@@ -12,10 +12,10 @@ var mongoose = require('mongoose');
 const db = require('./config/keys').MongoURI
 
 //Connect to Mongo
-mongoose.connect(db, {useNewUrlParser: true})
-  .then(() => console.log('MongoDB Connected...'))
-  .catch(() => console.log(err));
-
+mongoose.connect(db, { useNewUrlParser: true }, (err) => {
+  if (!err) { console.log('MongoDB Connection Succeeded.') }
+  else { console.log('Error in DB connection : ' + err) }
+  });
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
