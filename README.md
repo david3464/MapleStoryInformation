@@ -1,0 +1,2 @@
+# MapleStoryInformation
+store character information
